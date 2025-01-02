@@ -1,0 +1,82 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, rgb(254, 233, 209) 60%,rgb(254, 214, 168));
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(45deg, rgb(254, 214, 168)) 60%, rgb(254, 233, 209);    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container .head{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tablink {
+    background-color: rgb(250, 125, 76);
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.tablink:hover {
+    background-color: rgb(253, 74, 3);
+}
+
+
+.tabcontent {
+    display: none;
+}
+
+
+.tabcontent.active {
+    display: block;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color:  rgb(250, 125, 76);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgb(253, 74, 3);
+}
+
+canvas {
+    margin-top: 20px;
+}

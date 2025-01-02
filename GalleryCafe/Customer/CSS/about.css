@@ -1,0 +1,83 @@
+body{
+    background: linear-gradient(45deg, white 70%,rgb(254, 233, 209));
+}
+
+.about-us{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.about-us .image img{
+    padding: 50px;
+    width: 40vw;
+    max-width: 600px;
+}
+
+.about-us .content {
+    max-width: 40vw;
+}
+
+.about-us h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(241, 147, 73);
+}
+
+.about-us .content h1{
+    color: rgb(57, 33, 55);
+    font-size: 45px;
+    margin-bottom: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about-us .content p{
+    color: rgb(109, 97, 110);
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.chef-team{
+    padding: 7% 5%;
+    text-align: center;
+}
+
+.chef-team h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+}
+
+.chef-team .chef {
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.list {
+    width: 270px;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(254, 253, 209, 0.6);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.list:hover{
+    box-shadow: 0 0 100px rgb(239, 122, 30);
+    transform: scale(1.02);
+}
+
+.list img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 45px;
+}
+
+.list h4, .list p{
+    text-align: left;
+    margin-bottom: 15px;
+    display: block;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Management</title>
+    <link rel="stylesheet" href="../Css/user_management.css">
+    <link rel="shortcut icon" href="../Image/Logo1.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>Users <span style="color: red;">Management</span></h2>
+        </div>
+        
+        <button id="add-user-btn">Add New User</button>
+        
+        
+        <div id="users-container">
+            <table id="users-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+    <div id="add-user-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-add-user-modal">&times;</span>
+            <h2>Add New User</h2>
+            <form id="add-user-form">
+                <label for="name">Customer Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="contact">Contact Number:</label>
+                <input type="text" id="contact" name="contact" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit" id="save-user-btn">Save</button>
+            </form>
+        </div>
+    </div>
+
+   
+<div id="edit-user-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-edit-user-modal">&times;</span>
+        <h2>Edit User</h2>
+        <form id="edit-user-form">
+            <input type="hidden" id="edit-user-id" name="id">
+            <label for="edit-name">Customer Name:</label>
+            <input type="text" id="edit-name" name="name" required><br><br>
+            <label for="edit-address">Address:</label>
+            <textarea id="edit-address" name="address" required></textarea><br><br>
+            <label for="edit-email">Email:</label>
+            <input type="email" id="edit-email" name="email" required><br><br>
+            <label for="edit-contact">Contact Number:</label>
+            <input type="text" id="edit-contact" name="contact" required><br><br>
+            <button type="submit" id="update-user-btn">Update</button>
+        </form>
+        
+    </div>
+</div>
+
+
+    <script src="../JS/user_management.js"></script>
+</body>
+</html>

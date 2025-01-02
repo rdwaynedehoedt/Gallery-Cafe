@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports Management</title>
+    <link rel="stylesheet" href="../Css/reports.css">
+    <link rel="shortcut icon" href="../Image/Logo1.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="head">
+            <h2>Reports <span style="color: red;">Management</span></h2>
+        </div>
+       
+ 
+        <div class="tabs">
+            <button class="tablink" data-tab="Sales">Sales Reports</button>
+            <button class="tablink" data-tab="Inventory">Inventory Reports</button>
+        </div>
+
+
+        <div id="Sales" class="tabcontent">
+            <h2>Sales Reports</h2>
+            <canvas id="sales-chart" width="400" height="200"></canvas>
+            <button id="generate-sales-report">Generate Sales Report</button>
+        </div>
+
+
+        <div id="Inventory" class="tabcontent">
+            <h2>Inventory Reports</h2>
+            <canvas id="inventory-chart" width="400" height="200"></canvas>
+            <button id="generate-inventory-report">Generate Inventory Report</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+    <script src="../JS/reports.js"></script>
+</body>
+</html>

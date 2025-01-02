@@ -1,0 +1,125 @@
+body {
+    background: linear-gradient(45deg, white 70%, rgb(254, 233, 209));
+    overflow-x: hidden;  
+}
+
+.menu {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.menu h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+}
+
+.menu .menu-box {
+    padding: 50px 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 30px; 
+ }
+
+.menu-card {
+    min-width: 270px;
+    width: 270px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgb(254, 233, 209);
+}
+
+.menu-card:hover img {
+    margin-top: -50px;
+}
+
+.menu-card img {
+    margin-bottom: 20px;
+    width: 180px;
+    height: 180px;
+    transition: all 0.3s;
+}
+
+.menu-card h4,
+.menu-card p,
+.menu-card span {
+    text-align: left;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.menu-card p {
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu-card span {
+    color: rgb(241, 147, 73);
+    font-weight: 700;
+}
+
+
+.menu-card .category-name {
+    font-weight: bold;
+    color: #D2691E;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.add-to-cart-btn {
+    background-color: #a10f0f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #f30b0b;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.pagination-btn {
+    background-color: #f98f44;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-btn i {
+    color: #333; 
+    font-size: 20px; 
+}
+
+.pagination-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
